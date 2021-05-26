@@ -73,7 +73,7 @@ def s_t():
         hour=int(r_f(1))
         minute=int(r_f(2))
         second=int(r_f(3))
-        second-=1
+        
         if second==0 and minute>0:
             minute-=1
             second=60
@@ -103,7 +103,7 @@ def s_t():
             print('''timer ends''' )
             break
         else:
-            
+            second-=1
             w_f(day,hour,minute,second)
 print('-'*100)
 print("0.stopwatch")
